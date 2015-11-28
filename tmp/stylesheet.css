@@ -3,6 +3,45 @@
 * {
   box-sizing: border-box; }
 
+.tile {
+  height: 300px; }
+
+.text {
+  color: #FFF; }
+
+.header-tile {
+  background: #616161;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header-tile .center-flex {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    min-height: 50%;
+    max-width: 80%; }
+
+.noBreak {
+  white-spance: nowrap; }
+
+.red {
+  background: red; }
+
+.yellow {
+  background: yellow; }
+
+.clear {
+  clear: both; }
+
 header {
   height: 2em; }
 

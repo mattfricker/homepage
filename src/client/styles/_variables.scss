@@ -1,10 +1,11 @@
 $background: #FFF;
-$secondary-color: lighten(#949599, 10%);//grey
+$primary-color: #808080;
+$secondary-color: darken($primary-color, 12%);//grey
 $tertiary-color: #800000;//red
 $quaternary-color: #CDA900; //lime green
 $quinary-color: darken($background, 15%);//light grey
 $senary-color: #504A55; //dark blue
-$text-color: #002517;
+$text-color: #FFF;
 $secondary-text-color: #34515E;
 $em: 16px;
 
