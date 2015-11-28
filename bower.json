@@ -1,0 +1,23 @@
+{
+  "name": "mfricker",
+  "version": "0.0.0",
+  "main": "./src/client/index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "authors": [
+    "Matthew Fricker"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-route": "~1.4.4",
+    "font-awesome": "fontawesome#~4.5.0",
+    "normalize-css": "normalize.css#~3.0.3",
+    "pure": "~0.6.0"
+  }
+}

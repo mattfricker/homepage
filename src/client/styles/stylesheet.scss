@@ -1,0 +1,14 @@
+//Definitions
+
+@import "_variables.scss";
+
+@import "_mixins.scss";
+
+//Global Stules
+
+@import "_globals.scss";
+@import "_navbar.scss";
+
+//Page Specifics
+
+@import "pages/_homepage.scss";

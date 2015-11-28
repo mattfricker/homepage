@@ -1,0 +1,43 @@
+{
+  "name": "cstk_v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "mysql": "^2.9.0",
+    "nodemon": "^1.4.1",
+    "wiredep": "^2.2.2"
+  },
+  "devDependencies": {
+    "babel-runtime": "^5.8.25",
+    "bower": "^1.4.1",
+    "del": "^1.2.1",
+    "flightplan": "^0.6.4",
+    "fly": "^0.8.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-babel": "^5.2.1",
+    "gulp-if": "^1.2.5",
+    "gulp-inject": "^1.5.0",
+    "gulp-jscs": "^2.0.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-print": "^1.1.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.6",
+    "jshint-stylish": "^2.0.1",
+    "wiredep": "^2.2.2",
+    "yargs": "^3.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Fricker",
+  "license": "ISC"
+}
