@@ -1,13 +1,17 @@
 /*Mixins*/
 /* Base Styles -------------------- */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif; }
 
 .tile {
   height: 300px; }
 
 .text {
   color: #212121; }
+
+.alt-text {
+  font-family: 'Droid Serif', serif; }
 
 /*Homepage styles*/
 .tileHolder {

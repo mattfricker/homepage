@@ -1,6 +1,7 @@
 /* Base Styles -------------------- */
 * {
   box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 
 .tile {
@@ -9,4 +10,8 @@
 
 .text {
   color: $primary-text-color;
+}
+
+.alt-text {
+  font-family: 'Droid Serif', serif;
 }
