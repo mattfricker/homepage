@@ -8,33 +8,5 @@
 }
 
 .text {
-  color: $text-color;
-}
-
-.header-tile {
-  background: $secondary-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .center-flex {
-    align-self: center;
-    min-height: 50%;
-    max-width: 80%;
-  }
-}
-
-.noBreak {
-  white-spance: nowrap;
-}
-
-.red {
-  background: red;
-}
-
-.yellow {
-  background: yellow;
-}
-
-.clear {
-  clear: both;
+  color: $primary-text-color;
 }

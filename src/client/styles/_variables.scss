@@ -1,13 +1,15 @@
-$background: #FFF;
-$primary-color: #808080;
-$secondary-color: darken($primary-color, 12%);//grey
-$tertiary-color: #800000;//red
-$quaternary-color: #CDA900; //lime green
-$quinary-color: darken($background, 15%);//light grey
-$senary-color: #504A55; //dark blue
-$text-color: #FFF;
-$secondary-text-color: #34515E;
+$primary-color: #607D8B;
+$secondary-color: #455A64;
+$tertiary-color: #CFD8DC;
+$text-primary-color: #FFFFFF;
+$accent-color: #536DFE;
+$primary-text-color: #212121;
+$secondary-text-color: #727272;
+$divider-color: #B6B6B6;
 $em: 16px;
 
 //Borders
-$thin-border: 1px solid white;
+$thin-border: 1px solid $divider-color;
+
+//breakpoints
+$med-screen: 770px;

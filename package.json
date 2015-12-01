@@ -14,8 +14,10 @@
     "wiredep": "^2.2.2"
   },
   "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
     "babel-runtime": "^5.8.25",
     "bower": "^1.4.1",
+    "csswring": "^4.0.0",
     "del": "^1.2.1",
     "flightplan": "^0.6.4",
     "fly": "^0.8.3",
@@ -28,10 +30,12 @@
     "gulp-jshint": "^1.11.2",
     "gulp-load-plugins": "^0.10.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.1",
     "gulp-print": "^1.1.0",
-    "gulp-sass": "^2.0.4",
+    "gulp-sass": "^2.1.0",
     "gulp-util": "^3.0.6",
     "jshint-stylish": "^2.0.1",
+    "lost": "^6.6.2",
     "wiredep": "^2.2.2",
     "yargs": "^3.21.0"
   },

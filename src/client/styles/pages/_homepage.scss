@@ -1,4 +1,42 @@
 /*Homepage styles*/
-
+.tileHolder {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	@media only screen and (min-width : $med-screen) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	&>div {
+		height: 45vh;
+		border: $thin-border;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		background: $primary-color;
+		&:hover {
+			box-shadow: inset 0px -5px 15px -2px $accent-color;
+		}
+		@media only screen and (min-width : $med-screen) {
+			width: 33.3333%;
+		}
+	}
+	
+	& div:nth-child(2) {
+		background: $tertiary-color;
+		order: -1;
+		@media only screen and (min-width : $med-screen) {
+			order: 0;
+			width: 66.6666%;
+		}
+	}
+	
+	.bookContainer {
+		background-image: url('/img/dronedebate.jpg');
+		background-size: cover;
+	}
+	
+}
 
 

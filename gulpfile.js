@@ -4,6 +4,9 @@ var args = require('yargs').argv;
 var config = require('./gulp.config')();
 var del = require('del');
 var wiredep = require('wiredep').stream;
+var csswring = require('csswring');
+var lost = require('lost');
+var autoprefixer = require('autoprefixer-core');
 
 var $ = require('gulp-load-plugins')({lazy: true});
 
@@ -27,13 +30,16 @@ gulp.task('babel', function(){
 
 // gulp.task('styles', ['clean-styles'], function(){
 gulp.task('styles', function(){
+	var processors = [
+		lost,
+		autoprefixer({browsers:['last 2 version']})
+	];
 	log('compiling Sass to CSS');
 
 	return gulp
 		.src(config.sassMain)
-		.pipe($.plumber())
 		.pipe($.sass())
-		.pipe($.autoprefixer({browsers: ['last 2 version', '> 5%']})) // more than 5% of market
+		.pipe($.postcss(processors))
 		.pipe(gulp.dest(config.temp))
 
 
