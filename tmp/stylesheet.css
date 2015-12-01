@@ -31,6 +31,7 @@
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; } }
   .tileHolder > div {
+    min-height: 300px;
     height: 45vh;
     border: 1px solid #B6B6B6;
     display: -webkit-flex;
@@ -44,7 +45,10 @@
             justify-content: center;
     cursor: pointer;
     background: #CFD8DC;
-    font-size: 24px; }
+    font-size: 28.8px; }
+    .tileHolder > div a {
+      color: #212121;
+      text-decoration: none; }
     .tileHolder > div:hover {
       box-shadow: inset 0px -5px 15px -2px #536DFE; }
       .tileHolder > div:hover .fa {

@@ -8,6 +8,7 @@
 		flex-wrap: wrap;
 	}
 	&>div {
+		min-height: 300px;
 		height: 45vh;
 		border: $thin-border;
 		display: flex;
@@ -15,7 +16,11 @@
 		justify-content: center;
 		cursor: pointer;
 		background: $tertiary-color;
-		font-size: 1.5 * $em;
+		font-size: 1.8 * $em;
+		a {
+			color: $primary-text-color;
+			text-decoration: none;
+		}
 		&:hover {
 			box-shadow: inset 0px -5px 15px -2px $accent-color;
 			.fa {
