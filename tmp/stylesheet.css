@@ -10,8 +10,11 @@
 .text {
   color: #212121; }
 
-.alt-text {
+.altText {
   font-family: 'Droid Serif', serif; }
+
+.lightText {
+  color: #FFFFFF; }
 
 /*Homepage styles*/
 .tileHolder {
@@ -77,3 +80,37 @@
   .tileHolder .bookContainer {
     background-image: url("/img/dronedebate.jpg");
     background-size: cover; }
+
+.homeInfoBox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .homeInfoBox div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    min-height: 350px;
+    width: 80%; }
+
+.aboutBox {
+  background: #455A64;
+  border-top: 10px solid #B6B6B6;
+  border-bottom: 10px solid #B6B6B6; }
+  .aboutBox h2 {
+    font-size: 32px; }
+
+.contactBox {
+  margin-bottom: 100px;
+  background: #607D8B; }
