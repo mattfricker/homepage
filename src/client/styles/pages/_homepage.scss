@@ -14,18 +14,27 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
-		background: $primary-color;
+		background: $tertiary-color;
+		font-size: 1.5 * $em;
 		&:hover {
 			box-shadow: inset 0px -5px 15px -2px $accent-color;
+			.fa {
+				font-size: 2.5 * $em;	
+			}
 		}
 		@media only screen and (min-width : $med-screen) {
 			width: 33.3333%;
+		}
+		.fa {
+			padding-right: 20px;
 		}
 	}
 	
 	& div:nth-child(2) {
 		background: $tertiary-color;
 		order: -1;
+		cursor: auto;
+		font-size: $em;
 		@media only screen and (min-width : $med-screen) {
 			order: 0;
 			width: 66.6666%;
