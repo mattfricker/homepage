@@ -15,7 +15,7 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
-		background: $tertiary-color;
+		background: linear-gradient(0deg, $primary-color, $tertiary-color);
 		font-size: 1.8 * $em;
 		a {
 			color: $primary-text-color;
@@ -58,6 +58,9 @@
 	display: flex;
 	justify-content: center;
 	min-height: 300px;
+	h2 {
+		font-size: 2 * $em;
+	}
 	div {
 		display: flex;
 		flex-direction: column;
@@ -73,16 +76,12 @@
 	background: $secondary-color;
 	border-top: $thick-border;
 	border-bottom: $thick-border;
-	h2 {
-		font-size: 2 * $em;
-	}
 	p {
 		line-height: 1.5 * $em;
 	}
 }
 
-.contactBox {
-	margin-bottom: 100px;
+.portfolioBox {
 	background: $primary-color;
 	
 }

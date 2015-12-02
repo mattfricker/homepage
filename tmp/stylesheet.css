@@ -50,7 +50,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     cursor: pointer;
-    background: #CFD8DC;
+    background: linear-gradient(0deg, #607D8B, #CFD8DC);
     font-size: 28.8px; }
     .tileHolder > div a {
       color: #212121;
@@ -92,6 +92,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 300px; }
+  .homeInfoBox h2 {
+    font-size: 32px; }
   .homeInfoBox div {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -113,11 +115,8 @@
   background: #455A64;
   border-top: 7px solid #B6B6B6;
   border-bottom: 7px solid #B6B6B6; }
-  .aboutBox h2 {
-    font-size: 32px; }
   .aboutBox p {
     line-height: 24px; }
 
-.contactBox {
-  margin-bottom: 100px;
+.portfolioBox {
   background: #607D8B; }
