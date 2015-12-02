@@ -6,7 +6,7 @@ var del = require('del');
 var wiredep = require('wiredep').stream;
 var csswring = require('csswring');
 var lost = require('lost');
-var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer');
 
 var $ = require('gulp-load-plugins')({lazy: true});
 
