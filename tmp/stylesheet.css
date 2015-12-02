@@ -110,6 +110,8 @@
   border-bottom: 7px solid #B6B6B6; }
   .aboutBox h2 {
     font-size: 32px; }
+  .aboutBox p {
+    line-height: 24px; }
 
 .contactBox {
   margin-bottom: 100px;
