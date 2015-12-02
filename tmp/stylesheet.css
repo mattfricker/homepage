@@ -162,7 +162,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #B6B6B6;
-  background: linear-gradient(180deg, #455A64, #CFD8DC); }
+  background: linear-gradient(0deg, #455A64, #CFD8DC); }
   .portfolioItem > div {
     width: 90%; }
   .portfolioItem > footer {
