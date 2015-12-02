@@ -93,6 +93,10 @@
 }
 
 .portfolioWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 	.toolsUsed {
 		display: flex;
 		flex-flow: row wrap;
@@ -117,6 +121,7 @@
 	flex-direction: column;
 	border: $thin-border;
 	background: linear-gradient(0deg, $secondary-color, $tertiary-color);
+	margin-bottom: 5vh;
 	&>div {
 		width: 90%;
 	}
@@ -127,6 +132,9 @@
 	}
 	&:hover {
 		box-shadow: $box-shadow;		
+	}
+	@media only screen and (min-width : $med-screen) {
+		width: 45%;
 	}
 }
 
