@@ -19,6 +19,9 @@
 .altTextColor {
   color: #727272; }
 
+.fillContainerWidth {
+  width: 100%; }
+
 /*Homepage styles*/
 .tileHolder {
   display: -webkit-flex;
@@ -96,9 +99,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 300px; }
-  .homeInfoBox h2 {
-    font-size: 32px; }
-  .homeInfoBox div {
+  .homeInfoBox > div {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -113,6 +114,9 @@
             justify-content: space-around;
     width: 80%;
     padding: 5% 0%; }
+  @media only screen and (min-width: 770px) {
+    .homeInfoBox h2 {
+      font-size: 32px; } }
 
 .aboutBox {
   background: #455A64;
@@ -121,5 +125,55 @@
   .aboutBox p {
     line-height: 24px; }
 
-.portfolioBox {
+.portfolioOuterBox {
   background: #607D8B; }
+  .portfolioOuterBox .portfolioWrapper {
+    width: 100%; }
+
+.portfolioWrapper .toolsUsed {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  Justify-content: space-around;
+  margin: 0;
+  padding: 0; }
+  .portfolioWrapper .toolsUsed li {
+    list-style: none;
+    background: #455A64;
+    border-radius: 20%;
+    border: 1px solid #B6B6B6;
+    padding: 8px;
+    margin: 0 5px 5px; }
+
+.portfolioItem {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #B6B6B6;
+  background: linear-gradient(180deg, #455A64, #CFD8DC); }
+  .portfolioItem > div {
+    width: 90%; }
+  .portfolioItem > footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .portfolioItem:hover {
+    box-shadow: inset 0px -5px 15px -2px #536DFE; }
