@@ -64,7 +64,7 @@
       .tileHolder > div {
         width: 33.3333%;
         height: 45vh;
-        min-height: 400px; }
+        min-height: 300px; }
         .tileHolder > div .fa {
           padding-right: 20px; } }
   .tileHolder div:nth-child(2) {
