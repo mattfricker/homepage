@@ -90,7 +90,8 @@
   display: flex;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  min-height: 300px; }
   .homeInfoBox div {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -104,8 +105,9 @@
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    min-height: 350px;
-    width: 80%; }
+    height: 90%;
+    width: 80%;
+    padding: 5% 0%; }
 
 .aboutBox {
   background: #455A64;
