@@ -16,6 +16,9 @@
 .lightText {
   color: #FFFFFF; }
 
+.altTextColor {
+  color: #727272; }
+
 /*Homepage styles*/
 .tileHolder {
   display: -webkit-flex;
