@@ -4,7 +4,7 @@ var express = require('express'),
 	logger = require('morgan'),
 	env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
 	app = express(),
-	port = 3030,
+	port = 3030;
 
 app.set('views', __dirname + '/src/client/');
 app.set('view engine', 'jade');
