@@ -11,7 +11,7 @@ var express = require('express'),
         host     : 'localhost',
         user     : 'root',
         password : '',
-        database : 'cstk_v1'
+        database : 'portfolio'
     });
 
 app.set('views', __dirname + '/src/client/');
