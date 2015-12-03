@@ -12,10 +12,9 @@
 		vm.blogText = "Blog";
 		vm.comingSoon = function comingSoon() {
 			vm.blogText = "Coming soon";
-			setTimeout(function () {
-				debugger;
-				vm.blogText = 'Blog';
-			});
+		};
+		vm.redirect = function redirect(newLocation) {
+			window.location = newLocation;
 		};
 	}
 })();

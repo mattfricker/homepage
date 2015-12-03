@@ -1,10 +1,10 @@
 <div class="tileHolder">
-    <div class="bookContainer" alt="image of book on drone warfare co-authored by Matthew Fricker"><a href="http://www.amazon.com/Drone-Debate-Unmanned-Conventional-Battlefields/dp/1442230592/ref=sr_1_1?ie=UTF8&qid=1449081007&sr=8-1"></a></div>    
+    <div class="bookContainer" alt="image of book on drone warfare co-authored by Matthew Fricker"><a class="fullSizedLink" href="http://www.amazon.com/Drone-Debate-Unmanned-Conventional-Battlefields/dp/1442230592/ref=sr_1_1?ie=UTF8&qid=1449081007&sr=8-1"></a></div>    
     <div class="">
         <h1>{ { Matthew S. Fricker } }</h1>
         <h5 class="altText altTextColor">JavaScript Programmer & Drone Researcher</h5>
     </div>
-    <div ng-click="vm.comingSoon()" class=""><a href="#"><i class="fa fa-book"></i> {{vm.blogText}}</a></div>
-    <div class=""><a href="http://bit.ly/1yfhRm5"><i class="fa fa-linkedin-square"></i> LinkedIn </a></div>
-    <div class=""><a href="http://bit.ly/1HETkAy"><i class="fa fa-github-square"></i> Github </a></div>
+    <div ng-click="vm.comingSoon()"><i class="fa fa-book"></i> {{vm.blogText}}</div>
+    <div ng-click="vm.redirect('http://bit.ly/1yfhRm5')"><i class="fa fa-linkedin-square"></i> LinkedIn</div>
+    <div ng-click="vm.redirect('http://bit.ly/1HETkAy')"><i class="fa fa-github-square"></i> Github </div>
 </div>

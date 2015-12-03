@@ -13,6 +13,9 @@
 		vm.comingSoon = function comingSoon () {
 			vm.blogText = "Coming soon";
 		};
+		vm.redirect = function redirect (newLocation) {
+			window.location = newLocation;
+		}
     }
 
 })();
