@@ -7,10 +7,12 @@
 
 	HomeController.$inject = [];
 
-    function HomeController(HomePageService, StrikeInfoService){
+    function HomeController(){
     	var vm = this;
-
-
+		vm.blogText = "Blog"
+		vm.comingSoon = function comingSoon () {
+			vm.blogText = "Coming soon";
+		};
     }
 
 })();
