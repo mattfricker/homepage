@@ -5,10 +5,13 @@
 
 	angular.module('app.blog').controller('BlogController', BlogController);
 
-	BlogController.$inject = [];
+	BlogController.$inject = ['BlogPostsService'];
 
-	function BlogController() {
+	function BlogController(BlogPostsService) {
 		var vm = this;
-		vm.testString = "hello blog world.";
+		vm.blogList;
+		BlogPostsService.getBlogList().then(function (data) {
+			return vm.blogList = data;
+		});
 	}
 })();
