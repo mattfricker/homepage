@@ -1,8 +1,5 @@
-/**
- * Created by matt on 4/8/15.
- */
 (function(){
-    var app = angular.module('app', ['ngRoute', 'app.home']);
+    var app = angular.module('app', ['ngRoute', 'app.home', 'app.blog']);
 
     app.config(['$routeProvider',function($routeProvider){
 
@@ -13,6 +10,10 @@
                 controller: 'HomeController',
                 controllerAs: 'vm'
             })
-
+            .when('/blog', {
+                templateUrl: '/src/client/app/blog/blogList.html',
+                controller: 'BlogController',
+                controllerAs: 'vm'
+            })
     }]);
 })();

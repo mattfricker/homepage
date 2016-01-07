@@ -25,6 +25,7 @@ gulp.task('vet', ['babel'], function(){
 });
 
 gulp.task('babel', function(){
+	log('babel has run')
 	return gulp.src(config.precompiledJS)
 		.pipe($.babel({ optional: ['runtime'] }))
 		.pipe(gulp.dest(config.client));
@@ -94,7 +95,7 @@ gulp.task('wiredep', function(){
 		.pipe(gulp.dest(config.client))
 });
 
-gulp.task('inject', ['wiredep', 'styles', 'templateCache'], function(){ //calls wiredep and styles. Injects our css as well.
+gulp.task('inject', ['babel', 'wiredep',  'styles', 'templateCache'], function(){ //calls wiredep and styles. Injects our css as well.
 	log('Inject the custon css into the index');
 	return gulp
 		.src(config.index)
@@ -233,6 +234,8 @@ function startBrowserSync(isDev) {
 	
 	if (!!isDev){
 		gulp.watch([config.allSass], ['styles'])
+			.on('change', function(event) {changeEvent(event); });
+		gulp.watch([config.precompiledJS], ['babel'])
 			.on('change', function(event) {changeEvent(event); });
 	} else {
 		gulp.watch([config.allSass, config.js, config.html], ['optimize', browserSync.reload])
