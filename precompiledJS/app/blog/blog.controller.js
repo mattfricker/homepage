@@ -11,7 +11,7 @@
     	var vm = this;
 		vm.blogList;
 		BlogPostsService.getBlogList()
-			.then(data => vm.blogList = data)
+			.then(data => vm.blogList = data);
     }
 
 })();
