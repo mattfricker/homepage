@@ -247,8 +247,17 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
-  margin-left: 15%; }
+  width: 80%;
+  margin-left: 10%;
+  font-size: 19.2px;
+  line-height: 27.2px; }
+  .blogSummary h1 {
+    color: #607D8B;
+    margin-bottom: 0px; }
+  @media only screen and (min-width: 770px) {
+    .blogSummary {
+      width: 70%;
+      margin-left: 15%; } }
 
 .blogTags {
   display: -webkit-box;
