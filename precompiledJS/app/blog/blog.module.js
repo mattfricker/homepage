@@ -10,4 +10,13 @@
 	            replace: false
 	        };
 	    })
+		.directive('blogTags', function(){
+	        return {
+	            templateUrl: '/src/client/app/blog/blogTags.html',
+				scope: {
+					tagArray: "="	
+				},
+	            replace: false
+	        };
+	    })
 })();
