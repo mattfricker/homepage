@@ -7,7 +7,7 @@
                     <h4>{{project.title}}</h4>
                 </header>
                 <div class="portfolioItemImage">
-                    <a href="{{project.link}}"><img class="fillContainerWidth" src="{{project.imageSrc}}" alt="{{project.imageAlt}}"></a>
+                    <a href="{{project.link}}"><img class="fillContainerWidth" ng-src="{{project.imageSrc}}" alt="{{project.imageAlt}}"></a>
                 </div>
                 <footer class="portfolioItemDetails lightText">
                     <h5 class="altText pointer" ng-click="project.showTools = !project.showTools"><i class="fa" ng-class="project.showTools ? 'fa-chevron-up' : 'fa-chevron-down'"></i> Tools that were used:</h5>
