@@ -6,9 +6,13 @@
 	margin-left: 10%;
 	font-size: 1.2 * $em;
 	line-height: 1.7 * $em;
+	margin-top: 2 * $em;
 	h1 {
 		color: $primary-color;
 		margin-bottom: 0px;
+	}
+	h5 {
+		margin-bottom: .2 * $em;
 	}
 	@media only screen and (min-width : $med-screen) {
 		width: 70%;
