@@ -10,8 +10,8 @@
                     <a href="{{project.link}}"><img class="fillContainerWidth" src="{{project.imageSrc}}" alt="{{project.imageAlt}}"></a>
                 </div>
                 <footer class="portfolioItemDetails lightText">
-                    <p class="altText">Tools that were used:</p>
-                    <ul class="toolsUsed">
+                    <h5 class="altText pointer" ng-click="project.showTools = !project.showTools"><i class="fa" ng-class="project.showTools ? 'fa-chevron-up' : 'fa-chevron-down'"></i> Tools that were used:</h5>
+                    <ul ng-show="project.showTools" class="toolsUsed">
                         <li ng-repeat="tool in project.tools">{{tool}}</li>
                     </ul>
                 </footer>
