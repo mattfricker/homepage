@@ -233,9 +233,7 @@ function startBrowserSync(isDev) {
 	log('Starting browser-sync on port ' + port);
 	
 	if (!!isDev){
-		gulp.watch([config.allSass], ['styles'])
-			.on('change', function(event) {changeEvent(event); });
-		gulp.watch([config.precompiledJS], ['babel'])
+		gulp.watch([config.allSass, config.precompiledJS], ['styles', 'babel'])
 			.on('change', function(event) {changeEvent(event); });
 	} else {
 		gulp.watch([config.allSass, config.js, config.html], ['optimize', browserSync.reload])
