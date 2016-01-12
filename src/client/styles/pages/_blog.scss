@@ -21,6 +21,14 @@
 	}
 }
 
+.blogSummary {
+	border-bottom: 5px solid $primary-color;
+	p {
+		margin-top: 2.5 * $em;
+		margin-bottom: 3 * $em;
+	}
+}
+
 .blogTags {
 	display: flex;
 	list-style: none;
