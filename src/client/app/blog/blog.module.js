@@ -25,5 +25,10 @@
 			},
 			replace: false
 		};
+	}).directive('blogHeader', function () {
+		return {
+			templateUrl: '/src/client/app/blog/blogHeader.html',
+			replace: false
+		};
 	});
 })();
