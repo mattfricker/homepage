@@ -8,9 +8,7 @@
     RedirectService.$inject = [];
 
     function RedirectService(){
-		return function redirect (newLocation) {
-			window.location = newLocation;
-		};        
+		return (newLocation) => window.location = newLocation;   
     }
 
 })();
