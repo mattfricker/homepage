@@ -255,11 +255,12 @@
   margin-left: 10%;
   font-size: 19.2px;
   line-height: 27.2px;
-  margin-top: 32px; }
+  margin-top: 44px; }
   .blogSummary h1,
   .fullBlogPost h1 {
     color: #607D8B;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    font-size: 28.8px; }
   .blogSummary h5,
   .fullBlogPost h5 {
     margin-bottom: 3.2px; }
