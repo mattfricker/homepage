@@ -5,13 +5,11 @@
 
 	angular.module('app.home').controller('HomeController', HomeController);
 
-	HomeController.$inject = [];
+	HomeController.$inject = ['RedirectService'];
 
-	function HomeController() {
+	function HomeController(RedirectService) {
 		var vm = this;
-		vm.redirect = function redirect(newLocation) {
-			window.location = newLocation;
-		};
+		vm.redirect = RedirectService;
 		vm.portfolio = [{
 			title: 'Center for the Study of Targeted Killing',
 			link: 'http://targetedkilling.org/#/',
