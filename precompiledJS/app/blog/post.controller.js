@@ -11,7 +11,8 @@
     	var vm = this;
 		vm.post;
 		BlogPostsService.getBlogPost()
-			.then(data => vm.post = data[0]);
+			.then(data => vm.post = data[0])
+			.then(() => vm.post.date = new Date(vm.post.date))
     }
 
 })();

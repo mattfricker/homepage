@@ -1,5 +1,5 @@
 <div class="fullBlogPost">
 	<h1>{{currentPost.title}}</h1>
-	<h5>{{currentPost.date}}</h5>
+	<h5>{{currentPost.date | date :"fullDate"}}</h5>
 	<p ng-repeat="paragraph in currentPost.paragraphs track by $index" ng-class="{ 'headerParagraph': $index == 0}">{{paragraph}}</p>
 </div>
