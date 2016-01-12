@@ -46,3 +46,18 @@
 	font-size: 1.5 * $em;
 	line-height: 2 * $em;
 }
+
+.blogHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2 * $em;
+	background: $tertiary-color;
+	color: $secondary-color;
+	img {
+		width: 15%;
+		border-radius: 30%;
+		border: 5px solid $primary-color;
+		padding-right: $em;
+	}
+}
