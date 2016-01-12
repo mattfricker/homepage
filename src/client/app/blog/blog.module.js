@@ -17,5 +17,13 @@
 			},
 			replace: false
 		};
+	}).directive('fullBlogPost', function () {
+		return {
+			templateUrl: '/src/client/app/blog/fullBlogPost.html',
+			scope: {
+				currentPost: "="
+			},
+			replace: false
+		};
 	});
 })();

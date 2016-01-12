@@ -15,5 +15,10 @@
                 controller: 'BlogController',
                 controllerAs: 'vm'
             })
+            .when('/post/:postId', {
+                templateUrl: '/src/client/app/blog/post.html',
+                controller: 'PostController',
+                controllerAs: 'vm'
+            })
     }]);
 })();

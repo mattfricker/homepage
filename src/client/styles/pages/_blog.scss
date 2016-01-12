@@ -1,0 +1,39 @@
+.blogSummary,
+.fullBlogPost {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 1.2 * $em;
+	line-height: 1.7 * $em;
+	margin-top: 2 * $em;
+	h1 {
+		color: $primary-color;
+		margin-bottom: 0px;
+	}
+	h5 {
+		margin-bottom: .2 * $em;
+	}
+	@media only screen and (min-width : $med-screen) {
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+
+.blogTags {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	// Justify-content: center;
+	li {
+		margin-right: 10px;
+	}
+}
+
+.headerParagraph {
+	background: $tertiary-color;
+	font-size: 1.5 * $em;
+	line-height: 2 * $em;
+}
