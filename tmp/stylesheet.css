@@ -270,6 +270,11 @@
       width: 70%;
       margin-left: 15%; } }
 
+.fullBlogPost p {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+
 .blogSummary {
   border-bottom: 5px solid #607D8B; }
   .blogSummary p {

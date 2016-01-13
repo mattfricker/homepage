@@ -22,6 +22,12 @@
 	}
 }
 
+.fullBlogPost {
+	p{
+		align-self: flex-start;
+	}
+}
+
 .blogSummary {
 	border-bottom: 5px solid $primary-color;
 	p {
