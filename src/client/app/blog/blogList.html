@@ -1,2 +1,2 @@
 <blog-header></blog-header>
-<blog-summary ng-repeat="post in vm.blogList" blog-post="post"></blog-summary>
+<blog-summary ng-repeat="post in vm.blogList" blog-post="post" ng-click="vm.redirect('/#/post/' + post.postId)"></blog-summary>
