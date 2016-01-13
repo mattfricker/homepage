@@ -10,7 +10,6 @@
     function BlogController(BlogPostsService, RedirectService){
     	var vm = this;
 		vm.redirect = RedirectService;
-		debugger;
 		vm.blogList;
 		BlogPostsService.getBlogList()
 			.then(data => vm.blogList = data);
