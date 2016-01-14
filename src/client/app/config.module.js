@@ -5,11 +5,11 @@
 
     app.config(['$routeProvider', function ($routeProvider) {
 
-        $routeProvider.when('/', {
+        $routeProvider.when('/about', {
             templateUrl: '/src/client/app/home/homePage.html',
             controller: 'HomeController',
             controllerAs: 'vm'
-        }).when('/blog', {
+        }).when('/', {
             templateUrl: '/src/client/app/blog/blogList.html',
             controller: 'BlogController',
             controllerAs: 'vm'
