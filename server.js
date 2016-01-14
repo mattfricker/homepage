@@ -35,4 +35,10 @@ MongoClient.connect('mongodb://localhost:27017/blog', function(err, db) {
 			res.send({'post': docs})
 		})
 	})
+	app.get('/portfolio', function(req, res) {
+		db.collection('portfolio').find({}).toArray(function(err, docs) {
+			console.log(docs);
+			res.send({'portfolio': docs})
+		})
+	})
 })
