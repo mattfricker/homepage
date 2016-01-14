@@ -324,3 +324,9 @@
     border-radius: 30%;
     border: 5px solid #607D8B;
     padding-right: 16px; }
+
+.returnToBlogList {
+  margin: 3.2px;
+  background: white;
+  padding: 6.4px;
+  color: #455A64; }
