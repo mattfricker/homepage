@@ -25,7 +25,6 @@ gulp.task('vet', ['babel'], function(){
 });
 
 gulp.task('babel', function(){
-	log('babel has run')
 	return gulp.src(config.precompiledJS)
 		.pipe($.babel({ optional: ['runtime'] }))
 		.pipe(gulp.dest(config.client));
@@ -95,7 +94,7 @@ gulp.task('wiredep', function(){
 		.pipe(gulp.dest(config.client))
 });
 
-gulp.task('inject', ['babel', 'wiredep',  'styles', 'templateCache'], function(){ //calls wiredep and styles. Injects our css as well.
+gulp.task('inject', ['babel', 'wiredep', 'styles', 'templateCache'], function(){ //calls wiredep and styles. Injects our css as well.
 	log('Inject the custon css into the index');
 	return gulp
 		.src(config.index)
@@ -150,14 +149,14 @@ gulp.task('inject-server', function() {
 		.pipe(gulp.dest('./build'))
 });
 
-gulp.task('inject-analytics', function() {
-	log('injecting analytics into build folder');
-	return gulp
-		.src(config.analytics)
-		.pipe(gulp.dest('./build/analytics'))
-});
+// gulp.task('inject-analytics', function() {
+// 	log('injecting analytics into build folder');
+// 	return gulp
+// 		.src(config.analytics)
+// 		.pipe(gulp.dest('./build/analytics'))
+// });
 
-gulp.task('build', ['babel', 'inject-server', 'inject-analytics', 'images', 'minify']);
+gulp.task('build', ['babel', 'inject-server', 'images', 'minify']);
 /* Cleaners */
 gulp.task('clean', function(done) {
 	var deleteConfig = [].concat(config.build, config.temp);
@@ -233,7 +232,7 @@ function startBrowserSync(isDev) {
 	log('Starting browser-sync on port ' + port);
 	
 	if (!!isDev){
-		gulp.watch([config.allSass, config.precompiledJS], ['styles', 'babel'])
+		gulp.watch([config.allSass], ['babel', 'styles'])
 			.on('change', function(event) {changeEvent(event); });
 	} else {
 		gulp.watch([config.allSass, config.js, config.html], ['optimize', browserSync.reload])

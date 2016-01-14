@@ -3,13 +3,15 @@ var express = require('express'),
 	logger = require('morgan'),
 	MongoClient = require('mongodb').MongoClient,
 	assert = require('assert'),
-	env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
+	env = process.env.NODE_ENV = process.env.NODE_ENV || 'dev',
 	app = express(),
 	port = 3030;
 
+var indexFile = env === 'dev' ? __dirname + '/src/client/index.html' : __dirname + '/index.html';
 app.get('/', function(req, res){
-	res.sendFile(__dirname + '/src/client/index.html');
+	res.sendFile(indexFile);
 });
+
 
 //Final config
 app.use(express.static(__dirname));
