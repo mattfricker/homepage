@@ -10,9 +10,12 @@
 	function PostController(BlogPostsService, RedirectService) {
 		var vm = this;
 		vm.redirect = RedirectService;
-		vm.post;
+		vm.post, vm.nonExistingPost;
 		BlogPostsService.getBlogPost().then(function (data) {
-			return vm.post = data[0];
+			if (!!data[0]) {
+				return vm.post = data[0];
+			}
+			return vm.nonexistingPost = true;
 		});
 	}
 })();

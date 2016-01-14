@@ -27,8 +27,9 @@ MongoClient.connect('mongodb://localhost:27017/blog', function(err, db) {
 		})
 	})
 	app.get('/blogPost/:postId', function(req, res) {
-		console.log('id is ' + req.params.postId);
-		db.collection('posts').find({}).toArray(function(err, docs) {
+		var postId = Number(req.params.postId);
+		console.log('id is ' + postId);
+		db.collection('posts').find({postId: postId}).toArray(function(err, docs) {
 			res.send({'post': docs})
 		})
 	})
