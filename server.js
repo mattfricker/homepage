@@ -24,20 +24,19 @@ MongoClient.connect('mongodb://localhost:27017/blog', function(err, db) {
 	console.log("Successfully connected to MongoDV");
 	
 	app.get('/blogList', function(req, res) {
-		db.collection('posts').find({}).toArray(function(err, docs) {
+		db.collection('posts').find({}, {_id: 0}).toArray(function(err, docs) {
 			res.send({'posts': docs})
 		})
 	})
 	app.get('/blogPost/:postId', function(req, res) {
 		var postId = Number(req.params.postId);
 		console.log('id is ' + postId);
-		db.collection('posts').find({postId: postId}).toArray(function(err, docs) {
+		db.collection('posts').find({postId: postId}, {_id: 0}).toArray(function(err, docs) {
 			res.send({'post': docs})
 		})
 	})
 	app.get('/portfolio', function(req, res) {
-		db.collection('portfolio').find({}).toArray(function(err, docs) {
-			console.log(docs);
+		db.collection('portfolio').find({}, {_id: 0}).toArray(function(err, docs) {
 			res.send({'portfolio': docs})
 		})
 	})
