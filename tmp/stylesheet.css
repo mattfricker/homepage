@@ -316,7 +316,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
+  padding-top: 16px;
   background: #CFD8DC;
   color: #455A64; }
   .blogHeader img {
@@ -324,6 +324,13 @@
     border-radius: 30%;
     border: 5px solid #607D8B;
     padding-right: 16px; }
+  .blogHeader a {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    font-size: 19.2px;
+    margin-left: 16px;
+    margin-bottom: 16px; }
 
 .returnToBlogList {
   margin: 3.2px;
